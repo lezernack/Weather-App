@@ -12,11 +12,90 @@
       <ul style="float: right">
         <li>Home</li>
         <li>News</li>
-        <li><a href="weather.html">Weather</a></li>
+        <li>Weather</li>
         <li>About</li>
       </ul>
     </nav>
-    <main></main>
+    <main>
+      <hr />
+      <section class="weather-section">
+        <div class="page">
+          <h1>LATEST WEATHER</h1>
+          <div class="archive">
+            <article class="article">
+              <section id="stats">
+                <div class="summary">
+                  <h2>Weather summary</h2>
+                  <h3 id="five-city">Tooele</h3>
+                  <p>Currently: <span id="current-desc">Mostly Cloudy</span></p>
+                  <p>
+                    Tempature:
+                    <span id="current-temp">33</span> °F
+                  </p>
+                  <p>Wind Chill: <span id="current-windChill">30</span> °F</p>
+                  <p>Humidity: <span id="current-humid">73</span> %</p>
+                  <p>Wind Speed: <span id="current-windspeed">10</span> mph</p>
+                </div>
+              </section>
+              <div>
+                <img src="https://picsum.photos/400" alt="Random Image" />
+              </div>
+            </article>
+
+            <!-- 5 day forecast -->
+            <div class="article-five-day">
+              <article id="forecastContainer">
+                <h2 id="forecastTitle">5 Day Forecast</h2>
+                <h3 id="city">Tooele</h3>
+                <div class="flex-col">
+                  <span id="dayTitle1" class="col-head">Day 1</span>
+                  <!-- add images -->
+                  <img src="raincloud.jpg" id="weatherIcon1" class="weatherIcon1" />
+                  <span class="temp-data">
+                    <span id="data1">18</span>
+                    <span>°F</span>
+                  </span>
+                </div>
+                <div class="flex-col">
+                  <span id="dayTitle2" class="col-head">Day 2</span>
+                  <img src="sun-clouds.jpg" id="weatherIcon2" class="weatherIcon2" />
+                  <div class="temp-data">
+                    <span id="data2">19</span>
+                    <span>°F</span>
+                  </div>
+                </div>
+                <div class="flex-col">
+                  <span id="dayTitle3" class="col-head">Day 3</span>
+                  <img src="raincloud.jpg" id="weatherIcon3" class="weatherIcon" />
+                  <div class="temp-data">
+                    <span id="data3">24</span>
+                    <span>°F</span>
+                  </div>
+                </div>
+                <div class="flex-col">
+                  <span id="dayTitle4" class="col-head">Day 4</span>
+                  <img src="raincloud.jpg" id="weatherIcon4" class="weatherIcon" />
+                  <div class="temp-data">
+                    <span id="data4">16</span>
+                    <span>°F</span>
+                  </div>
+                </div>
+                <div class="flex-col">
+                  <span id="dayTitle5" class="col-head">Day 5</span>
+                  <img src="sun-clouds.jpg" id="weatherIcon5" class="weatherIcon" />
+                  <div class="temp-data">
+                    <span id="data5">14</span>
+                    <span>°F</span>
+                  </div>
+                </div>      
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+    </main>
     <footer></footer>
   </body>
 </html>
