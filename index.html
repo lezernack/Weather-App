@@ -8,8 +8,55 @@
   </head>
   <body>
     <header></header>
-    <nav></nav>
-    <main></main>
+    <nav>
+      <ul style="float: right">
+        <li>Home</li>
+        <li>News</li>
+        <li>Weather</li>
+        <li>About</li>
+      </ul>
+    </nav>
+    <main>
+      <hr />
+      <section class="weather-section">
+        <div class="page">
+          <h1>LATEST Weather</h1>
+          <div class="archive">
+            <article class="article">
+              <section id="stats">
+                <div class="summary">
+                  <h2>Weather summary</h2>
+                  <h3 id="five-city"></h3>
+                  <p>Currently: <span id="current-desc">Mostly Cloudy</span></p>
+                  <p>
+                    Tempature:
+                    <span id="current-temp">33</span> °F
+                  </p>
+                  <p>Wind Chill: <span id="current-windChill">30</span> °F</p>
+                  <p>Humidity: <span id="current-humid">73</span> %</p>
+                  <p>Wind Speed: <span id="current-windspeed">10</span> mph</p>
+                </div>
+              </section>
+              <div>
+                <img src="https://picsum.photos/400" alt="Random Image" />
+              </div>
+            </article>
+
+            <!-- 5 day forecast -->
+            <div class="article-five-day">
+              <article id="forecastContainer">
+                <h2 id="forecastTitle">5 Day Forecast</h2>
+                <h3 id="city">Tooele</h3>
+                <div class="flex-col">
+                  <span id="dayTitle1" class="col-head">Day 1</span>
+                  <img id="weatherIcon2" class="weatherIcon" />
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
