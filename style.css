@@ -112,50 +112,52 @@ hr {
 /* Weather Sections */
 
 .article-five-day {
-  grid-column 1 / -1;
+  grid-column: 1 / -1;
   padding: 15px;
   margin-top: 15px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1) 0 20px 20px rgba(0, 0, 0, 0.05);
-  background-color: rgba(200, 200, 255, 0.3);    
+  background-color: rgba(200, 200, 255, 0.3);
 }
 
 .five-article {
-  text-align: center;  
+  text-align: center;
 }
 
 #city {
-  text-align: center;  
+  text-align: center;
 }
 
 #forecastTitle {
-  text-align: center;  
+  text-align: center;
 }
 
 .flex {
   display: flex;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .flex-col {
   text-align: center;
-  margin-right: 50px;  
+  margin-right: 50px;
 }
 
 #stats {
   text-align: start;
-  float: left;    
+  float: left;
 }
 
 .temp-data {
   margin-left: 10px;
-  display: flex;    
+  display: flex;
 }
 
 .weatherIcon {
+  width: 230px;
   display: flex;
-  margin-left: 0px;  
+  flex-direction: row;
+  margin-left: 0px;
 }
 
 footer {
-  text-align: center;  
+  text-align: center;
 }
