@@ -4,7 +4,7 @@ a {
 
 ul {
   max-width: 100%;
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -74,7 +74,7 @@ hr {
   text-align: center;
   padding: 1em;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.05);
-  grid-column: 1 /5;
+  grid-column: 1 / 5;
   background: rgba(200, 200, 255, 0.3);
 }
 
@@ -92,7 +92,7 @@ hr {
 
 .article:nth-child(8) {
   grid-column: -3 / -1;
-  background: rgba(200, 200, 255, 0.3);
+  background: rgba(255, 200, 255, 0.3);
 }
 
 .article:nth-child(8):after {
