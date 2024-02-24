@@ -26,3 +26,13 @@ fetch(url)
       0.4275 * temp * wind ** 0.16;
     document.getElementById("current-windChill").textContent = Math.floor(wc);
   });
+
+let currentDate = new Date().toLocaleDateString();
+let date = document.querySelector("#updated");
+
+date.textContent = currentDate;
+
+let currentYear = new Date().getFullYear();
+let year = document.querySelector("#year");
+
+year.textContent = currentYear;
