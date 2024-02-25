@@ -1,4 +1,4 @@
-const url = `https://api.openweathermap.org/geo/1.0/reverse?lat={40.559810}&lon={-112.361346}&limit={1}&appid={2449653c0be4bff8e3ffcbe35f523514}`;
+const url = `https://api.openweathermap.org/data/3.0/onecall?lat={40.559810}&lon={-112.361346}&limit={1}&appid={42b2bd6a477109afc00d28704bef90ae}`;
 
 fetch(url)
   .then((response) => response.json())
