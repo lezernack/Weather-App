@@ -33,46 +33,48 @@ fetch(news)
   .then((response) => response.json())
   .then((jsObject) => {
     document.getElementById("header-article").textContent =
-      jsObject.articles[6].name;
-
-    let headerImg = document.getElementById("header-img");
-    headerImg.src = jsObject.articles[6];
-    headerImg.alt;
-
-    document.getElementById("header-desc").textContent =
-      jsObject.articles[6].description;
-
-    document.getElementById("article-link-1").textContent =
       jsObject.articles[1].name;
 
-    document.getElementById("article-desc-1").textContent =
+    document.getElementById("header-img").src = jsObject.articles[1].urlToImage;
+
+    document.getElementById("header-desc").textContent =
       jsObject.articles[1].description;
 
+    document.getElementById("article-link-1").textContent =
+      jsObject.articles[3].name;
+
+    document.getElementById("article-img-1").src =
+      jsObject.articles[3].urlToImage;
+
+    document.getElementById("article-desc-1").textContent =
+      jsObject.articles[3].description;
+
     document.getElementById("article-link-2").textContent =
-      jsObject.articles[2].name;
+      jsObject.articles[4].name;
+
+    document.getElementById("article-img-2").src =
+      jsObject.articles[4].urlToImage;
 
     document.getElementById("article-desc-2").textContent =
-      jsObject.articles[2].description;
+      jsObject.articles[4].description;
 
     document.getElementById("article-link-3").textContent =
       jsObject.articles[5].name;
+
+    document.getElementById("article-img-3").src =
+      jsObject.articles[5].urlToImage;
 
     document.getElementById("article-desc-3").textContent =
       jsObject.articles[5].description;
 
     document.getElementById("article-link-4").textContent =
-      jsObject.articles[4].name;
+      jsObject.articles[6].name;
+
+    document.getElementById("article-img-4").src =
+      jsObject.articles[6].urlToImage;
 
     document.getElementById("article-desc-4").textContent =
-      jsObject.articles[4].description;
-  });
-
-fetch(news)
-  .then((response) => response.blob)
-  .then((blob) => {
-    //document.getElementById("header-img") = blob.articles[6].image;//
-
-    document.getElementById("article-img-1").url = blob.articles[1].image;
+      jsObject.articles[6].description;
   });
 
 let currentDate = new Date().toLocaleDateString();
