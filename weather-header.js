@@ -36,3 +36,7 @@ let currentYear = new Date().getFullYear();
 let year = document.querySelector("#year");
 
 year.textContent = currentYear;
+
+const news = `https://news.api.org/v2/top-headlines?country=us&category=business&apiKey={250c1df2d31345be815b8308dedf5fef}`;
+
+fetch(news);
