@@ -76,3 +76,13 @@ fetch(news)
     document.getElementById("article-desc-4").textContent =
       jsObject.articles[6].description;
   });
+
+let currentDate = new Date().toLocaleDateString();
+let date = document.querySelector("#updated");
+
+date.textContent = currentDate;
+
+let currentYear = new Date().getFullYear();
+let year = document.querySelector("#year");
+
+year.textContent = currentYear;
