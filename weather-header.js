@@ -11,7 +11,7 @@ fetch(url)
     document.getElementById("current-windSpeed").textContent =
       jsObject.wind.speed;
 
-    const descrip = jsObject.weather[0].description;
+    const descrip = jsObject.weather[1].description;
     document.getElementById("current-desc").textContent = descrip;
 
     let temp = (document.getElementById("current-temp").textContent =
@@ -27,6 +27,54 @@ fetch(url)
     document.getElementById("current-windChill").textContent = Math.floor(wc);
   });
 
+const news = `https://newsapi.org/v2/top-headlines?country=us&category=general&apiKey=250c1df2d31345be815b8308dedf5fef`;
+
+fetch(news)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    document.getElementById("header-article").textContent =
+      jsObject.articles[6].name;
+
+    let headerImg = document.getElementById("header-img");
+    headerImg.src = jsObject.articles[6];
+    headerImg.alt;
+
+    document.getElementById("header-desc").textContent =
+      jsObject.articles[6].description;
+
+    document.getElementById("article-link-1").textContent =
+      jsObject.articles[1].name;
+
+    document.getElementById("article-desc-1").textContent =
+      jsObject.articles[1].description;
+
+    document.getElementById("article-link-2").textContent =
+      jsObject.articles[2].name;
+
+    document.getElementById("article-desc-2").textContent =
+      jsObject.articles[2].description;
+
+    document.getElementById("article-link-3").textContent =
+      jsObject.articles[5].name;
+
+    document.getElementById("article-desc-3").textContent =
+      jsObject.articles[5].description;
+
+    document.getElementById("article-link-4").textContent =
+      jsObject.articles[4].name;
+
+    document.getElementById("article-desc-4").textContent =
+      jsObject.articles[4].description;
+  });
+
+fetch(news)
+  .then((response) => response.blob)
+  .then((blob) => {
+    //document.getElementById("header-img") = blob.articles[6].image;//
+
+    document.getElementById("article-img-1").url = blob.articles[1].image;
+  });
+
 let currentDate = new Date().toLocaleDateString();
 let date = document.querySelector("#updated");
 
@@ -36,7 +84,3 @@ let currentYear = new Date().getFullYear();
 let year = document.querySelector("#year");
 
 year.textContent = currentYear;
-
-const news = `https://news.api.org/v2/top-headlines?country=us&category=business&apiKey={250c1df2d31345be815b8308dedf5fef}`;
-
-fetch(news);
